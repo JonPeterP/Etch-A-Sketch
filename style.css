@@ -1,0 +1,19 @@
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
+    max-width: 60px;
+    
+}
+
+.row {
+    margin: 0px;
+    background: gold;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
