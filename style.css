@@ -12,8 +12,12 @@
 
 .row {
     margin: 0px;
-    background: gold;
+    background: white;
     text-align: center;
     width: 60px;
     height: 60px;
+}
+
+.row.hovered{
+    background: black;
 }
