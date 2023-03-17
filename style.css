@@ -1,9 +1,15 @@
 body{
+    font-family: 'Open Sans', Helvetica, sans-serif;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
 
     gap: 24px;
+    background-color: #E7F6F2;
+    color: #2C3333;
+
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .grid{
@@ -11,12 +17,10 @@ body{
    
     overflow: hidden;
     
-    /*align-items: center;
-    justify-content: center;
-    */
+
     width: 960px;
     height: 960px;
-    border: 1px solid black;
+    border: 1px solid #A5C9CA;
    
     flex-shrink: 0;
 }
@@ -27,13 +31,50 @@ body{
 
 .row {
     margin: 0px;
-    background: white;
-    
-    border: 0.5px dotted red;
-
-  
 }
 
 .row.hovered{
-    background: black;
+    background: #2C3333;
 }
+
+button{
+    background-color: #A5C9CA;
+    border: 2px solid #A5C9CA;
+    width: 240px;
+    height: auto;
+    padding: 24px;
+    border-radius: 8px;
+
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.inputSize{
+    height: 24px;
+    max-width: 50px;
+    font-size: 22px;
+}
+
+.labelSize{
+    font-size: 24px;
+}
+
+.layout-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+h1{
+    margin-bottom: 64px;
+}
+
+/*
+https://colorhunt.co/palette/2c3333395b64a5c9cae7f6f2
+2C3333
+395B64
+A5C9CA
+E7F6F2
+
+*/

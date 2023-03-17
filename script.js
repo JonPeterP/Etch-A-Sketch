@@ -40,21 +40,27 @@ function updateRows() {
     const rowsDiv = document.querySelectorAll('.row');
     rowsDiv.forEach(row => row.addEventListener('mouseover', function onDivMouseHover(e) {
         const list = row.classList;
-        
             list.add('hovered');
         
     }));
 
 }
 
-
+function clearRows(){
+    const rowsDiv = document.querySelectorAll('.row');
+    rowsDiv.forEach(row => {
+        const list = row.classList;
+        list.remove('hovered');
+        
+    });
+}
 
 btnUpdate.addEventListener('click', function () {
     var size = parseInt(txtInSize.value);
     console.log(size);
     var regex = /^[0-9]+$/;
-    if (size < 20 || size >= 100 || !txtInSize.value.match(regex) || txtInSize.value == null) {
-        alert("Please enter size between 20 and 100");
+    if (size < 16 || size >= 100 || !txtInSize.value.match(regex) || txtInSize.value == null) {
+        alert("Please enter size between 16 and 100");
         return;
     }
     var currGrid = document.querySelector('.grid');
@@ -64,12 +70,13 @@ btnUpdate.addEventListener('click', function () {
 });
 
 btnClear.addEventListener('click', function(){
-    updateRows()
+    console.log("pressed this");
+    clearRows();
 });
 
 
 createDivGrid(20);
-
+txtInSize.value = 20;
 updateRows();
 
 
