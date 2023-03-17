@@ -1,27 +1,36 @@
 body{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
+
+    gap: 24px;
 }
+
 .grid{
     display: flex;
+   
+    overflow: hidden;
+    
+    /*align-items: center;
     justify-content: center;
-    align-items: center;
-    max-width: 960px;
-    height: auto;
+    */
+    width: 960px;
+    height: 960px;
     border: 1px solid black;
+   
+    flex-shrink: 0;
 }
 
 .column {
-    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
-    max-width: 60px;
-    
+    flex: 1; /* <--- required (style column to fill the same space as the other columns) */   
 }
 
 .row {
     margin: 0px;
     background: white;
-    text-align: center;
+    
+    border: 0.5px dotted red;
+
   
 }
 
